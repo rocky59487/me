@@ -5,180 +5,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rocky 的個人網站 — Personal Site</title>
-    <meta name="description" content="這是 Rocky 的個人網站，記錄我的程式專案、學習歷程與興趣愛好。">
+    <title>Rocky 的個人網站</title>
+    <meta name="description" content="Rocky 的個人網站，記錄學習與專案。">
 
-    <!-- Google Fonts 現代字型引入 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-
-    <!-- 外部 CSS 樣式表 -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ========== 頁首與導航欄 (Header & Navigation) ========== -->
+    <!-- 導覽列 -->
     <header class="site-header">
         <div class="header-inner">
-            <a href="#hero" class="logo">
-                <span class="logo-text">Rocky</span>
-            </a>
+            <a href="#hero" class="logo">Rocky</a>
 
-            <nav aria-label="主要導航">
+            <nav>
                 <a href="#about">關於我</a>
-                <a href="#projects">精選專案</a>
-                <a href="#skills">技術與興趣</a>
-                <a href="#contact">聯絡我</a>
+                <a href="#projects">專案</a>
+                <a href="#skills">技能與興趣</a>
+                <a href="#contact">聯絡</a>
             </nav>
         </div>
     </header>
+
     <main>
-        <!-- ========== 區塊 1: Hero / 主視覺與簡介 ========== -->
-        <section id="hero" class="section-hero">
-            <div class="hero-content">
-                <div class="hero-tag">👋 Hello, World!</div>
-                <h1 class="hero-title">你好，我是 <span class="gradient-text">Rocky</span></h1>
-                <p class="hero-subtitle">
-                    熱愛編程與探索新技術的開發者 / 學生。目前正在製作有趣的專案並參與 Hack Club 挑戰！
-                </p>
-                <div class="cta-group">
-                    <a href="#projects" class="btn btn-primary">探索專案 ↓</a>
-                    <a href="https://github.com/rocky59487" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-secondary">
-                        GitHub 主頁 ↗
-                    </a>
-                </div>
+        <!-- 主頁自介 -->
+        <section id="hero">
+            <h1>你好，我是 Rocky</h1>
+            <p class="subtitle">
+                目前正在學習網頁前端，這是我為了參加 Hack Club Stardance 製作的個人網站。
+            </p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">看專案</a>
+                <a href="https://github.com/rocky59487" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
             </div>
         </section>
 
-        <!-- ========== 區塊 2: 關於我 (About Me) ========== -->
+        <!-- 關於我 -->
         <section id="about">
-            <h2 class="section-heading">關於我 <span>/ About Me</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        我8/21開始學習程式碼，為了製作參與stardance的網站
-                    </p>
-                </div>
-                <div class="about-card">
-                    <h3>⚡ 快速小檔案</h3>
-                    <ul class="info-list">
-                        <li><strong>所在地：</strong> 台灣 (Taiwan)</li>
-                        <li><strong>當前目標：</strong> 完成 Stardance 挑戰、開發新專案</li>
-                        <li><strong>常用工具：</strong> VS Code, Git, HTML/CSS</li>
+            <h2>關於我</h2>
+            <div class="about-content">
+                <p>
+                    我 8/21 開始學習寫程式，主要為了製作參與 Stardance 的個人網站。
+                </p>
+                <div class="profile-box">
+                    <h3>基本資料</h3>
+                    <ul>
+                        <li><strong>所在地：</strong> 台灣</li>
+                        <li><strong>目標：</strong> 完成 Stardance 挑戰、開發新專案</li>
+                        <li><strong>學習中工具：</strong> VS Code, Git, HTML, CSS</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- ========== 區塊 3: 精選專案 (Projects) ========== -->
+        <!-- 專案列表 -->
         <section id="projects">
-            <h2 class="section-heading">精選專案 <span>/ Featured Projects</span></h2>
+            <h2>專案列表</h2>
             <div class="projects-grid">
 
-                <!-- 專案卡片 1 -->
-                <article class="project-card">
-                    <div class="project-badge">重點作品</div>
+                <!-- 專案 1 -->
+                <div class="project-card">
                     <h3>Block Reality</h3>
-                    <p class="project-desc">
+                    <p>
                         一個 Minecraft Forge 模組，將真實世界的有限元素分析（FEA）引入遊戲中，模擬建築結構力學與崩塌。
                     </p>
-                    <div class="tag-list">
-                        <span class="tag">Java</span>
-                        <span class="tag">Forge</span>
-                        <span class="tag">FEA</span>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Forge</span>
+                        <span>FEA</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/rocky59487/block-reality" target="_blank" rel="noopener noreferrer"
-                            class="link-btn">GitHub 原始碼 ↗</a>
-                        <a href="https://rocky59487.github.io/block-reality-site/" target="_blank"
-                            rel="noopener noreferrer" class="link-btn">專案網站 ↗</a>
+                    <div class="links">
+                        <a href="https://github.com/rocky59487/block-reality" target="_blank" rel="noopener noreferrer">GitHub 原始碼</a>
+                        <a href="https://rocky59487.github.io/block-reality-site/" target="_blank" rel="noopener noreferrer">專案網站</a>
                     </div>
-                </article>
+                </div>
 
-                <!-- 專案卡片 2 -->
-                <article class="project-card">
-                    <div class="project-badge">個人網站</div>
+                <!-- 專案 2 -->
+                <div class="project-card">
                     <h3>Personal Site</h3>
-                    <p class="project-desc">
-                        為 Hack Club Stardance 設計的個人官方網站，純原生 HTML/CSS/JS 開發，具備深色主題與平滑動效。
+                    <p>
+                        為 Hack Club Stardance 製作的個人網站，使用純 HTML 與 CSS 排版。
                     </p>
-                    <div class="tag-list">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#hero" class="link-btn">目前瀏覽中 ↗</a>
+                    <div class="links">
+                        <a href="#hero">回到頂部</a>
                     </div>
-                </article>
+                </div>
 
             </div>
         </section>
 
-        <!-- ========== 區塊 4: 技能與興趣 (Skills & Hobbies) ========== -->
+        <!-- 技能與興趣 -->
         <section id="skills">
-            <h2 class="section-heading">技能與興趣 <span>/ Skills & Hobbies</span></h2>
-            <div class="skills-wrapper">
-                <div class="skill-category">
-                    <h3>💻 程式語言與技術</h3>
-                    <div class="badge-group">
-                        <span class="skill-pill">HTML5</span>
-                        <span class="skill-pill">CSS3</span>
-                        <span class="skill-pill">Git / GitHub</span>
+            <h2>技能與興趣</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>學習中的技術</h3>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Git / GitHub</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🎮 興趣與探索</h3>
-                    <div class="badge-group">
-                        <span class="skill-pill">Minecraft Modding</span>
-                        <span class="skill-pill">結構工程 (Structural Engineering)</span>
-                        <span class="skill-pill">開源專案</span>
-                        <span class="skill-pill">閱讀技術文章</span>
+                <div class="skill-box">
+                    <h3>其他興趣</h3>
+                    <div class="tags">
+                        <span>Minecraft Mod 開發</span>
+                        <span>結構工程</span>
+                        <span>開源專案</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== 區塊 5: 聯絡方式 (Contact) ========== -->
+        <!-- 聯絡方式 -->
         <section id="contact">
-            <h2 class="section-heading">聯絡我 <span>/ Get In Touch</span></h2>
-            <p class="contact-intro">
-                想要交流專案、聊聊技術或合作？歡迎透過以下管道找到我！
-            </p>
-            <div class="contact-cards">
-                <a href="https://github.com/rocky59487" target="_blank" rel="noopener noreferrer" class="contact-item">
-                    <span class="contact-icon">🐙</span>
-                    <div class="contact-info">
-                        <strong>GitHub</strong>
-                        <span>@rocky59487</span>
-                    </div>
-                </a>
-                <a href="mailto:chentingyu0504@example.com" class="contact-item">
-                    <span class="contact-icon">📫</span>
-                    <div class="contact-info">
-                        <strong>Email</strong>
-                        <span>chentingyu0504@example.com</span>
-                    </div>
-                </a>
-            </div>
+            <h2>聯絡方式</h2>
+            <p>歡迎透過以下方式聯絡我：</p>
+            <ul class="contact-list">
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/rocky59487" target="_blank" rel="noopener noreferrer">github.com/rocky59487</a>
+                </li>
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:chentingyu0504@example.com">chentingyu0504@example.com</a>
+                </li>
+            </ul>
         </section>
     </main>
 
-    <!-- ========== 頁尾 (Footer) ========== -->
+    <!-- 頁尾 -->
     <footer class="site-footer">
-        <div class="footer-inner">
-            <p>© 2026 Rocky. Built with passion for Hack Club Stardance.</p>
-            <p class="footer-sub">No frameworks, pure craftsmanship.</p>
-        </div>
+        <p>© 2026 Rocky. Made for Hack Club Stardance.</p>
     </footer>
 
-    <!-- 引入 JavaScript 互動腳本 -->
     <script src="main.js"></script>
 </body>
 
